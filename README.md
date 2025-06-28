@@ -18,7 +18,7 @@ This project combines candlestick pattern recognition with sentiment analysis to
 
 ## 📁 Dataset Sources
 
-- **Stock Data**: TSLA (Tesla) OHLC via `yfinance`
+- **Stock Data**:`yfinance`
 - **News Sentiment**: Queried via NewsAPI and scored using:
   - FinBERT (transformers)
   - VADER
