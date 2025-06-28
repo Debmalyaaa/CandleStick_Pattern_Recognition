@@ -65,39 +65,15 @@ This project combines candlestick pattern recognition with sentiment analysis to
 - Decision Tree
 - **Stacked Ensemble (Meta-model: Random Forest)**
 
-> ❌ KNN was tested but **excluded** from the final comparison.
-
 ---
 
-## ✅ Model Results Summary
+## 🧠 Best Performing Model
 
-| Model                        | Accuracy | F1 Score | Train Accuracy | Test Accuracy |
-|-----------------------------|----------|----------|----------------|---------------|
-| Random Forest               | 0.75     | 0.7316   | 0.9964         | 0.7460        |
-| XGBoost                     | 0.73     | 0.7195   | 0.9445         | 0.7317        |
-| Gaussian Naive Bayes        | 0.33     | 0.2590   | 0.3799         | 0.3309        |
-| Support Vector Classifier   | 0.66     | 0.5625   | 0.6957         | 0.6601        |
-| Stochastic Gradient Descent | 0.67     | 0.5435   | 0.7101         | 0.6655        |
-| Logistic Regression         | 0.72     | 0.6971   | 0.7579         | 0.7209        |
-| Decision Tree               | 0.43     | 0.3772   | 0.5092         | 0.4347        |
-| **Stacked Model**           | **0.75** | **0.7473**| 0.8492         | **0.7549**    |
+While multiple machine learning models were trained and evaluated, **the stacked ensemble model consistently achieved the most balanced and accurate results** across different evaluation metrics.
 
----
+> ⚠️ **Note**: Since stock market data and news sentiment are time-sensitive and change frequently, **the performance metrics (accuracy, F1-score, ROC-AUC) can vary between runs**. Thus, static performance tables or visualizations are not emphasized in this project.
 
-## 📊 Visualizations
-
-### 🔻 Confusion Matrix (Stacked Model)
-![Confusion Matrix - Stacked Model](images/confusion_matrix_stacked.png)
-
----
-
-### 📈 F1 Score Comparison
-![F1 Score Comparison](images/f1_score_comparison.png)
-
----
-
-### 📉 Accuracy Score Comparison
-![Accuracy Score Comparison](images/accuracy_score_comparison.png)
+Instead, this project focuses on providing a **flexible, reusable, and modular pipeline** that adapts to updated data for real-time or retrained forecasting.
 
 ---
 
